@@ -5,11 +5,10 @@ import plotly.express as px
 
 # Armazenando os dataframes em variáveis
 
-dados_europa = pd.read_csv(r'C:\Users\madki\dashboard-sprint-5\Europe.csv')
-dados_india = pd.read_csv(r'C:\Users\madki\dashboard-sprint-5\India.csv')
-dados_filipinas = pd.read_csv(
-    r'C:\Users\madki\dashboard-sprint-5\Philippines.csv')
-dados_eua = pd.read_csv(r'C:\Users\madki\dashboard-sprint-5\United_States.csv')
+dados_europa = pd.read_csv('Europe.csv')
+dados_india = pd.read_csv('India.csv')
+dados_filipinas = pd.read_csv('Philippines.csv')
+dados_eua = pd.read_csv('United_States.csv')
 
 # Renomeando a coluna "Revenue growth" do dataframe dos dados dos EUA
 dados_eua = dados_eua.rename(columns={'Revenue growth': 'Revenue growth (%)'})
